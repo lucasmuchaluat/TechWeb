@@ -1,0 +1,68 @@
++--------------------------+
+| Tables_in_dados_projeto1 |
++--------------------------+
+| cadastro                 |
+| tarefas                  |
++--------------------------+
+2 rows in set (0.03 sec)
+
+CREATE DATABASE dados_projeto1;
+
+USE dados_projeto1;
+
+CREATE TABLE Cadastro (
+    -> id INT NOT NULL AUTO_INCREMENT,
+    -> user VARCHAR(32) NOT NULL,
+    -> password VARCHAR(32) NOT NULL,
+    -> PRIMARY KEY (ID)
+    -> );
+
+INSERT INTO Cadastro (user,password)
+    -> VALUES ('teste','teste');
+
+DESCRIBE Cadastro;
+
++----------+-------------+------+-----+---------+----------------+
+| Field    | Type        | Null | Key | Default | Extra          |
++----------+-------------+------+-----+---------+----------------+
+| id       | int(11)     | NO   | PRI | NULL    | auto_increment |
+| user     | varchar(32) | NO   |     | NULL    |                |
+| password | varchar(32) | NO   |     | NULL    |                |
++----------+-------------+------+-----+---------+----------------+
+3 rows in set (0.02 sec)
+
+SELECT * FROM Cadastro;
+
++----+--------+----------+
+| id | user   | password |
++----+--------+----------+
+|  1 | teste  | teste    |
+|  2 | teste1 | teste1   |
+|  3 | lucas  | lucas    |
+|  4 | teste3 | teste3   |
+|  5 | teste4 | teste4   |
+|  6 | lucas2 | lucas2   |
++----+--------+----------+
+6 rows in set (0.02 sec)
+
+ CREATE TABLE Tarefas (
+    -> id INT NOT NULL AUTO_INCREMENT,
+    -> user VARCHAR(32) NOT NULL,
+    -> type VARCHAR(32) NOT NULL,
+    -> task VARCHAR(32) NOT NULL,
+    -> date DATE,
+    -> PRIMARY KEY (ID)
+    -> );
+
+INSERT INTO Tarefas (user, type, task, date)
+    -> VALUES ('lucas','teste','teste','20190224');
+
+
+SELECT * FROM Tarefas;
+
++----+-------+-------+-------+------------+
+| id | user  | type  | task  | date       |
++----+-------+-------+-------+------------+
+|  2 | lucas | teste | teste | 2019-01-15 |
++----+-------+-------+-------+------------+
+1 row in set (0.00 sec)
