@@ -49,13 +49,6 @@
 					value="<%=date%>" placeholder="Password" required='required'>
 				<input type="submit" class="fadeIn.fourth" value="Atualizar!">
 			</form>
-
-			<!-- Signin Form -->
-			<div id="formFooter">
-				<a class="underlineHover" href="crud.jsp">Retornar para aba
-					principal.</a>
-			</div>
-
 		</div>
 	</div>
 
