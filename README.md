@@ -8,4 +8,4 @@ pelo menos.
 Algum tipo de categorização. 
 * Postar texto, ver, apagar e editar. Com alguma carinha bonita ainda
 que eu tenha um framework como bootstrap.
-http://ec2-52-90-41-143.compute-1.amazonaws.com/Projeto1/login.jsp?
+* http://ec2-52-90-41-143.compute-1.amazonaws.com/Projeto1/login.jsp?
